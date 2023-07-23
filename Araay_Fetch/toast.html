@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+    #toast{
+            position: fixed;
+            top:32px;
+            right:32px;
+           
+
+        }
+        .toast{
+            display: flex;
+           
+            border-radius:2px ;
+            border:1px solid black;
+           
+            padding: 5px 10px;
+            border-left: 4px solid;
+            transition: opacity 0.2 ease;
+            min-width: 200px;
+            max-width: 450px;
+          animation: slideInLeft ease 0.3s;
+           
+           
+
+        }
+        
+        @keyframes slideInLeft {
+            from{
+            
+                 transform: translateX(calc(100% +32px));
+            }
+            to{
+               opacity: .1s;
+                transform: translateX(0);
+            }
+            
+        }
+        .toast__icon,.toast__close{
+            cursor: pointer;
+
+        }
+        .toast__body{
+            padding: 0 15px;
+            font-size: 15px;
+            flex-grow: 1;
+
+        }
+        .toast__title{
+            color: #333;
+            font-weight: 600;
+          
+
+}
+.toast__msg{
+
+}
+.toast__close:hover ,
+.toast__icon:hover{
+    opacity: 0.2;
+}
+
+.toast__close{
+    font-size: 20;
+    color: rgba(0, 0, 0, 0.3);
+    
+
+
+}
+.toast + .toast{
+    margin-top: 10px;
+}
+
+.toast--succes{
+ border-color: greenyellow;
+
+}
+.toast--succes .toast__icon{
+color: green;
+}
+
+.toast--info{
+
+ border-color: rgb(243, 202, 120);
+}
+.toast--info  .toast__icon{
+color: rgb(243, 202, 120);
+}
+.toast--warning{
+    border-color: yellow;
+} 
+.toast--warning .toast__icon{
+color: yellow;
+}
+
+
+       
+    </style>
+</head>
+<body>
+    <div id="toast">
+        <!-- Success -->
+        <div class="toast toast--succes">
+            <div class="toast__icon">
+                <i class="fa fa-check" aria-hidden="true"></i>
+
+            </div>
+            <div class="toast__body">
+                <h3 class="toast__title">Success</h3>
+                <p class="toast__msg">Máy tính tốt</p>
+            </div>
+            <div class="toast__close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+
+            </div>
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>
+
+
+<!-- 
+   
+     <div class="toast toast--info">
+        <div class="toast__icon">
+            <i class="fa fa-check" aria-hidden="true"></i>
+
+        </div>
+        <div class="toast__body">
+            <h3 class="toast__title">Infor</h3>
+            <p class="toast__msg">Máy tính kết nối tốt</p>
+        </div>
+        <div class="toast__close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+
+        </div>
+    </div>
+
+     
+     <div class="toast toast--warning">
+        <div class="toast__icon">
+            <i class="fa fa-check" aria-hidden="true"></i>
+
+        </div>
+        <div class="toast__body">
+            <h3 class="toast__title">Warning</h3>
+            <p class="toast__msg">Máy tính kết nối tốt</p>
+        </div>
+        <div class="toast__close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+
+        </div>
+    </div>
+ -->

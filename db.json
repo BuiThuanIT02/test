@@ -1,0 +1,33 @@
+{
+  "courses": [
+    {
+      "name": "cc",
+      "description": "ddddd",
+      "id": 1
+    },
+    {
+      "img": "../json_server/1.jpg",
+      "name": "Kien thuc bat dau",
+      "description": "ngan han",
+      "id": 2
+    },
+    {
+      "img": "../json_server/1.jpg",
+      "name": "Kien thuc bat dau",
+      "description": "ngan han",
+      "id": 3
+    },
+    {
+      "img": "../json_server/1.jpg",
+      "name": "Kien thuc bat dau",
+      "description": "ngan han",
+      "id": 4
+    },
+    {
+      "img": "../json_server/1.jpg",
+      "name": "Kien thuc bat dau",
+      "description": "ngan han",
+      "id": 5
+    }
+  ]
+}
